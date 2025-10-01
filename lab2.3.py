@@ -13,21 +13,44 @@ print(first_name.title(),last_name.title())
 
 fnamefirstletter = first_name[0].lower()
 fnamerest = first_name[1:]
-firstnamecaps = fnamefirstletter,fnamerest.upper()
+firstnamecaps = fnamefirstletter+fnamerest.upper()
 print(firstnamecaps)
 
 lnamefirstletter = last_name[0].lower()
 lnamerest = last_name[1:]
-lastnamecaps = lnamefirstletter,lnamerest.upper()
+lastnamecaps = lnamefirstletter+lnamerest.upper()
 print(lastnamecaps)
+
+print("")
 
 print("Task #2")
 phrase = ('''Once you start down the dark path, forever will it dominate your destiny.''')
 phraseupper = phrase.upper()
-phraseencrypted = phrase.replace("a", "1"),phrase.replace("e", "2"),phrase.replace("i", "3"),phrase.replace("o", "4"),phrase.replace("u", "5")
-print(phrase)
-print(phraseupper)
+phraseencrypted = phraseupper.replace("A", "1")\
+                        .replace("E", "2")\
+                        .replace("I", "3")\
+                        .replace("O", "4")\
+                        .replace("U", "5")
+                            
 print(phraseencrypted)
+
+print("")
+
+print("Task #3")
+phraselength = phrase.len()/3
+phrasestart = phrase[0:phraselength]
+phrasemiddle = phrase[phraselength:phraselength*2]
+phraseend =  phrase[phraselength*2:phraselength*3]
+
+print(phrasemiddle)
+print(phasestart)
+print(phraseend)
+
+print("")
+
+print("Task #4")
+
+
 
 
 
