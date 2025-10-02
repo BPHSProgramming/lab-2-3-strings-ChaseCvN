@@ -37,20 +37,53 @@ print(phraseencrypted)
 print("")
 
 print("Task #3")
-phraselength = phrase.len()/3
+phraselength = int(len(phrase)/3)
 phrasestart = phrase[0:phraselength]
 phrasemiddle = phrase[phraselength:phraselength*2]
 phraseend =  phrase[phraselength*2:phraselength*3]
 
 print(phrasemiddle)
-print(phasestart)
+print(phrasestart)
 print(phraseend)
 
 print("")
 
 print("Task #4")
+number = input("Please input a 5 digit number\t")
+number1 = int(number[0])
+number2 = int(number[1])
+number3 = int(number[2])
+number4 = int(number[3])
+number5 = int(number[4])
+finalnum = number1+number2+number3+number4+number5
+print(number1,"+",number2,"+",number3,"+",number4,"+",number5,"=",finalnum)
 
 
+print("Task #5")
+
+print("")
+
+newphrase = "Why, you stuck-up half-witted scruffy-looking nerf herder"
+
+#everyother = 
+#everyotherbackwards = 
 
 
+print("Task #6")
 
+print("")
+
+from datetime import date
+
+
+today = date.today()
+
+today = today.strftime("%Y,%B,%d")
+
+
+print(f"The date today is {today}")
+
+month = today[5:len(today)-3]
+day = today[len(today)-2:]
+year = today[0:4]
+print("This is day",day,"of,",month,"of the year",year )
