@@ -37,7 +37,7 @@ print(phraseencrypted)
 print("")
 
 print("Task #3")
-phraselength = int(len(phrase)/3)
+phraselength = len(phrase)//3
 phrasestart = phrase[0:phraselength]
 phrasemiddle = phrase[phraselength:phraselength*2]
 phraseend =  phrase[phraselength*2:phraselength*3]
@@ -65,9 +65,12 @@ print("")
 
 newphrase = "Why, you stuck-up half-witted scruffy-looking nerf herder"
 
-#everyother = 
-#everyotherbackwards = 
+everyother = newphrase[0:len(newphrase):2]
+everyotherbackwards = newphrase[len(newphrase):0:-2]
 
+print(everyother)
+print("")
+print(everyotherbackwards)
 
 print("Task #6")
 
